@@ -132,7 +132,7 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
   })
   .catch((error) => {
     let result = `<div class="error">`;
-    result += "<p>Sorry, we couldn't find an amiibo with that name.</p>";
+    result += "<p>Sorry, we couldn't find an amiibo with the name " + document.getElementById("amiiboName").value + ".</p>";
     result += "<p>Make sure you spelt the name correctly.</p>";
     result += "<p>Some amiibo that contain special characters (\"&\", \"(\", \")\" and \"-\") don't work with the API.</p>"
     result +=  "<p>Check <a href=\"https://amiiboapi.com/\">amiiboapi.com</a> for more!</p>";
