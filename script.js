@@ -42,10 +42,13 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
     response += allAmiibo[0].gameSeries;
     response += `</h4>`;
     response += `</div>`;
+    
+    //start amiibo container div
+    response += `<div class="amiibo-container">`;
 
     for (let i = 0; i < allAmiibo.length; i += 1){
-      //start amiibo container div
-      response += `<div class="amiibo-container">`;
+      //start amiibo-info-container
+      response += `<div class="amiibo-info-container">`;
 
       //start img-container div 
       response += `<div class="img-container">`;
@@ -73,7 +76,7 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
 
 
       //start compatible games
-      response += `<div class="games-container>`;
+      response += `<div class="games-container">`;
       response += `<p id="switchGames">Total Compatible Switch Games: `;
       response += allAmiibo[i].gamesSwitch.length + `</p>`;
 
@@ -89,8 +92,11 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
       //end details
 
       response += '</div>';
-      //end amiibo container div
+      //end amiibo-info-container
     }
+
+    response += '</div>';
+    //end amiibo container div
     
     document.getElementById("result").innerHTML = response;
   })

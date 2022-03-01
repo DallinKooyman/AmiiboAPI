@@ -24,6 +24,12 @@ form label {
   align-items: center;
 }
 
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .error {
   margin: 2%;
   display: flex;
@@ -39,21 +45,47 @@ form label {
 }
 
 .amiibo-container {
+  width: 85%;
+  align-self: center;
+}
+
+.amiibo-info-container {
   display: flex;
-  border: 5px solid #000000;
-  border-bottom: 2.5px;
-  justify-content: space-around;
+  border-left: 5px solid #000000;
+  border-right: 5px solid #000000;
+  border-top: 2.5px solid #000000;
+  border-bottom: 2.5px solid #000000;
+  justify-content: center;
+}
+
+.amiibo-info-container:first-of-type {
+  border-top: 5px solid #000000;
+}
+
+.amiibo-info-container:last-of-type {
+  border-bottom: 5px solid #000000;
 }
 
 .img-container {
-
-  padding-left: 5%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 3% 5%;
+  border-right: 3px dashed gray;
 }
 
-
+.details {
+  flex: 1.5;
+  margin: 3% 5%;
+}
 
 .release-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+h5 {
+  text-align: center;
 }

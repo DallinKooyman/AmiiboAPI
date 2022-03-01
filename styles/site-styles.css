@@ -12,6 +12,10 @@ a:visited {
   color: #198b56;
 }
 
+.footer-spacer {
+  height: 50px;
+}
+
 footer {
   background-color: #a9aca7;
   height: auto;
