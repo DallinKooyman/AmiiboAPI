@@ -67,11 +67,17 @@ form label {
 }
 
 .img-container {
-  flex: 1;
+  flex: 1 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 3% 5%;
   border-right: 3px dashed gray;
+}
+
+img {
+  width: fit-content;
+  height: fit-content;
 }
 
 .details {
@@ -88,4 +94,15 @@ form label {
 
 h5 {
   text-align: center;
+}
+
+.usable-game {
+  font-size: small;
+  width: fit-content;
+}
+
+.consoleInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

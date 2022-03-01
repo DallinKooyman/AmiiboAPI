@@ -77,23 +77,46 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
 
       //start compatible games
       response += `<div class="games-container">`;
-      response += `<p id="switchGames">Total Compatible Switch Games: `;
-      response += allAmiibo[i].gamesSwitch.length + `</p>`;
-      if (allAmiibo[i].gamesSwitch.length > 0) {
-        
-      }
 
-      response += `<p id="wiiUGames">Total Compatible Wii U Games: `;
-      response += allAmiibo[i].gamesWiiU.length + `</p>`;
-      if (allAmiibo[i].gamesWiiU.length > 0) {
-        
+      response += `<h5 id="switchGames">Total Compatible Switch Games: `;
+      response += allAmiibo[i].gamesSwitch.length + `</h5>`;
+      response += `<div class="consoleInfo">`;
+      let switchGames = allAmiibo[i].gamesSwitch;
+      if (switchGames.length > 0) {
+        for (let j = 0; j < switchGames.length; j += 1){
+          response += `<p class="usable-game">`;
+          response += switchGames[j].gameName;
+          response += `</p>`;
+        }
       }
+      response += `</div>`;
 
-      response += `<p id="3DSGames">Total Compatible 3DS Games: `;
-      response += allAmiibo[i].games3DS.length + `</p>`;
-      if (allAmiibo[i].games3DS.length > 0) {
-        
+      
+      response += `<h5 id="wiiUGames">Total Compatible Wii U Games: `;
+      response += allAmiibo[i].gamesWiiU.length + `</h5>`;
+      response += `<div class="consoleInfo">`;
+      let wiiUGames = allAmiibo[i].gamesWiiU;
+      if (wiiUGames.length > 0) {
+        for (let j = 0; j < wiiUGames.length; j += 1){
+          response += `<p class="usable-game">`;
+          response += wiiUGames[j].gameName;
+          response += `</p>`;
+        }
       }
+      response += `</div>`;
+
+      response += `<h5 id="3DSGames">Total Compatible 3DS Games: `;
+      response += allAmiibo[i].games3DS.length + `</h5>`;
+      response += `<div class="consoleInfo">`;
+      let game3DS = allAmiibo[i].games3DS;
+      if (game3DS.length > 0) {
+        for (let j = 0; j < game3DS.length; j += 1){
+          response += `<p class="usable-game">`;
+          response += game3DS[j].gameName;
+          response += `</p>`;
+        }
+      }
+      response += `</div>`;
 
       response += `</div>`;
       //end compatible games
