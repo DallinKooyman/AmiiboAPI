@@ -40,4 +40,20 @@ form label {
 
 .amiibo-container {
   display: flex;
+  border: 5px solid #000000;
+  border-bottom: 2.5px;
+  justify-content: space-around;
+}
+
+.img-container {
+
+  padding-left: 5%;
+}
+
+
+
+.release-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
