@@ -3,25 +3,6 @@ body {
   background-color: #ffffff;
 }
 
-.page {
-  margin-top: 60px;
-  overflow: hidden;
-  font-size: 1em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-.page-title {
-  width: 100%;
-}
-
-.page-title h1 {
-  text-align: center;
-  margin: 10px auto 0px auto;
-}
 
 a {
   color: #3FA34D;
@@ -53,9 +34,6 @@ footer {
     display: none;
   }
 
-  .page-title h1 {
-    font-size: 1.75em;
-  } 
 }
 
 /* Desktop Styles */
@@ -67,5 +45,4 @@ footer {
   footer {
     font-size: large;
   }
-  
 }
