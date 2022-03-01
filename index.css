@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 form {
@@ -95,12 +96,12 @@ img {
   margin-bottom: 5%;
 }
 
-h5 {
+h4 {
   text-align: center;
 }
 
 .usable-game {
-  font-size: small;
+  font-size: smaller;
   width: fit-content;
 }
 

@@ -66,7 +66,7 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
 
       for(const value in allAmiibo[i].release) {
         response += `<div class="release">`;
-        response += `<h5 class="region">` + value.toUpperCase() + `: </h5>`;
+        response += `<h4 class="region">` + value.toUpperCase() + `: </h4>`;
         response += `<p class="date">` + allAmiibo[i].release[value] + `</p>`;
         response += `</div>`;
       }
@@ -78,8 +78,8 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
       //start compatible games
       response += `<div class="games-container">`;
 
-      response += `<h5 id="switchGames">Total Compatible Switch Games: `;
-      response += allAmiibo[i].gamesSwitch.length + `</h5>`;
+      response += `<h4 id="switchGames">Total Compatible Switch Games: `;
+      response += allAmiibo[i].gamesSwitch.length + `</h4>`;
       response += `<div class="consoleInfo">`;
       let switchGames = allAmiibo[i].gamesSwitch;
       if (switchGames.length > 0) {
@@ -92,8 +92,8 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
       response += `</div>`;
 
       
-      response += `<h5 id="wiiUGames">Total Compatible Wii U Games: `;
-      response += allAmiibo[i].gamesWiiU.length + `</h5>`;
+      response += `<h4 id="wiiUGames">Total Compatible Wii U Games: `;
+      response += allAmiibo[i].gamesWiiU.length + `</h4>`;
       response += `<div class="consoleInfo">`;
       let wiiUGames = allAmiibo[i].gamesWiiU;
       if (wiiUGames.length > 0) {
@@ -105,8 +105,8 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
       }
       response += `</div>`;
 
-      response += `<h5 id="3DSGames">Total Compatible 3DS Games: `;
-      response += allAmiibo[i].games3DS.length + `</h5>`;
+      response += `<h4 id="3DSGames">Total Compatible 3DS Games: `;
+      response += allAmiibo[i].games3DS.length + `</h4>`;
       response += `<div class="consoleInfo">`;
       let game3DS = allAmiibo[i].games3DS;
       if (game3DS.length > 0) {
