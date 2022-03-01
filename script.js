@@ -27,10 +27,20 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
       //start amiibo-info-container
       response += `<div class="amiibo-info-container>`;
       response += `<h3>`;
-      response += allAmiibo[0].character;
+      response += allAmiibo[i].character;
       response += `</h3>`
 
+      response += `<h4>`;
+      response += allAmiibo[i].gameSeries;
+      response += `</h4>`;
 
+      //start details
+      response += `<div class="details">`;
+
+
+
+      response += `</div>`;
+      //end details
 
       response += '</div>';
       //end amiibo-info-container
@@ -39,7 +49,8 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
       //start img-container div 
       response += `<div class="img-container">`;
 
-      
+      response += `<img src="` + allAmiibo[i].image + `"/>`;
+
       response += '</div>';
       //end img-container div 
 
