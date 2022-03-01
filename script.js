@@ -17,8 +17,6 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
     return
   }
 
-
-
   console.log("Amiibo name: " + name);
 
   const url = "https://www.amiiboapi.com/api/amiibo/?name=" + name + "&showusage";
@@ -86,6 +84,9 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
         for (let j = 0; j < switchGames.length; j += 1){
           response += `<p class="usable-game">`;
           response += switchGames[j].gameName;
+          if (j + 1 != switchGames.length) {
+            response += ", ";
+          }
           response += `</p>`;
         }
       }
@@ -100,6 +101,9 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
         for (let j = 0; j < wiiUGames.length; j += 1){
           response += `<p class="usable-game">`;
           response += wiiUGames[j].gameName;
+          if (j + 1 != wiiUGames.length) {
+            response += ", ";
+          }
           response += `</p>`;
         }
       }
@@ -113,6 +117,9 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
         for (let j = 0; j < game3DS.length; j += 1){
           response += `<p class="usable-game">`;
           response += game3DS[j].gameName;
+          if (j + 1 != game3DS.length) {
+            response += ", ";
+          }
           response += `</p>`;
         }
       }
