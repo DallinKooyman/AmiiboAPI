@@ -1,7 +1,6 @@
 .banner {
   margin: 20px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 form {
@@ -22,4 +21,93 @@ form label {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amiibo-header {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.amiibo-container {
+  width: 85%;
+  align-self: center;
+}
+
+.amiibo-info-container {
+  display: flex;
+  border-left: 5px solid #000000;
+  border-right: 5px solid #000000;
+  border-top: 2.5px solid #000000;
+  border-bottom: 2.5px solid #000000;
+  justify-content: center;
+}
+
+.amiibo-info-container:first-of-type {
+  border-top: 5px solid #000000;
+}
+
+.amiibo-info-container:last-of-type {
+  border-bottom: 5px solid #000000;
+}
+
+.img-container {
+  flex: 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 2%;
+  border-right: 3px dashed gray;
+}
+
+img {
+  width: fit-content;
+  height: fit-content;
+}
+
+.details {
+  flex: 1.5;
+  margin: 3% 2%;
+}
+
+.release-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+h4 {
+  text-align: center;
+}
+
+.usable-game {
+  font-size: smaller;
+  width: fit-content;
+}
+
+.consoleInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#credit {
+  text-align: center;
 }
