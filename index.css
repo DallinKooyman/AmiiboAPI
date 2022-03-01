@@ -29,3 +29,15 @@ form label {
   display: flex;
   justify-content: center;
 }
+
+.amiibo-header {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.amiibo-container {
+  display: flex;
+}
