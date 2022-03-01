@@ -79,12 +79,22 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
       response += `<div class="games-container">`;
       response += `<p id="switchGames">Total Compatible Switch Games: `;
       response += allAmiibo[i].gamesSwitch.length + `</p>`;
+      if (allAmiibo[i].gamesSwitch.length > 0) {
+        
+      }
 
       response += `<p id="wiiUGames">Total Compatible Wii U Games: `;
       response += allAmiibo[i].gamesWiiU.length + `</p>`;
+      if (allAmiibo[i].gamesWiiU.length > 0) {
+        
+      }
 
       response += `<p id="3DSGames">Total Compatible 3DS Games: `;
       response += allAmiibo[i].games3DS.length + `</p>`;
+      if (allAmiibo[i].games3DS.length > 0) {
+        
+      }
+
       response += `</div>`;
       //end compatible games
 
