@@ -6,17 +6,6 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
     return;
   }
 
-  if (name.includes("(")) {
-    let result = ""
-    
-    result += `<div class="error">`;
-    result += "<p>Sorry, you can't have parenthesis in the name. Check <a href=\"https://amiiboapi.com/\">amiiboapi.com</a> for more</p>";
-    result += `</div>`
-
-    document.getElementById("result").innerHTML = result;
-    return
-  }
-
   console.log("Amiibo name: " + name);
 
   const url = "https://www.amiiboapi.com/api/amiibo/?name=" + name + "&showusage";
@@ -139,6 +128,7 @@ document.getElementById("amiiboNameSubmit").addEventListener("click", function(e
     //end amiibo container div
     
     document.getElementById("result").innerHTML = response;
+    document.getElementById("amiiboName").value = "";
   })
   .catch((error) => {
     let result = `<div class="error">`;
